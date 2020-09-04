@@ -6,6 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+func hideKeyBord() {
+    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+}
 
 func creatExampleImageUrl(Int : Int) -> URL {
     
