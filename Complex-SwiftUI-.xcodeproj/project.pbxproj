@@ -10,6 +10,8 @@
 		0337718AC31464BDB87BBE67 /* Pods_Complex_SwiftUI_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC306E07E019EE138FFCCC5 /* Pods_Complex_SwiftUI_.framework */; };
 		3A0BCAF225033CDF00397F5F /* Circular Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BCAF125033CDF00397F5F /* Circular Slider.swift */; };
 		3A62AFE525027B02006CC89D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A62AFE425027B02006CC89D /* SearchView.swift */; };
+		3A630B932504B6A90098B741 /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B922504B6A90098B741 /* JSONParse.swift */; };
+		3A630B952504B7580098B741 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B942504B7580098B741 /* JSONData.swift */; };
 		3A7FDAAC2501260D00BF278D /* Complex_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FDAAB2501260D00BF278D /* Complex_SwiftUI_App.swift */; };
 		3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FDAAD2501260D00BF278D /* ContentView.swift */; };
 		3A7FDAB02501260E00BF278D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7FDAAF2501260E00BF278D /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		34A8AE6354C658D27BE940CF /* Pods-Complex-SwiftUI-.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Complex-SwiftUI-.debug.xcconfig"; path = "Target Support Files/Pods-Complex-SwiftUI-/Pods-Complex-SwiftUI-.debug.xcconfig"; sourceTree = "<group>"; };
 		3A0BCAF125033CDF00397F5F /* Circular Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circular Slider.swift"; sourceTree = "<group>"; };
 		3A62AFE425027B02006CC89D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3A630B922504B6A90098B741 /* JSONParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
+		3A630B942504B7580098B741 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		3A7FDAA82501260D00BF278D /* Complex-SwiftUI-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Complex-SwiftUI-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7FDAAB2501260D00BF278D /* Complex_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complex_SwiftUI_App.swift; sourceTree = "<group>"; };
 		3A7FDAAD2501260D00BF278D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		3A630B912504B6940098B741 /* JSON Parse */ = {
+			isa = PBXGroup;
+			children = (
+				3A630B922504B6A90098B741 /* JSONParse.swift */,
+				3A630B942504B7580098B741 /* JSONData.swift */,
+			);
+			path = "JSON Parse";
+			sourceTree = "<group>";
+		};
 		3A7FDA9F2501260D00BF278D = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +110,7 @@
 				3AF1E669250323BD00441EFE /* SideMenu */,
 				3A0BCAEF25033CA800397F5F /* Circular Slider */,
 				3AD137AE250476F400F6C3A0 /* ProgressHUD */,
+				3A630B912504B6940098B741 /* JSON Parse */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
 				3A7FDAAF2501260E00BF278D /* Assets.xcassets */,
@@ -288,10 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A0BCAF225033CDF00397F5F /* Circular Slider.swift in Sources */,
+				3A630B932504B6A90098B741 /* JSONParse.swift in Sources */,
 				3A7FDABD2501270500BF278D /* GlobalHelpers.swift in Sources */,
 				3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */,
 				3A7FDAAC2501260D00BF278D /* Complex_SwiftUI_App.swift in Sources */,
 				3AF1E66B250323CF00441EFE /* SideMenu.swift in Sources */,
+				3A630B952504B7580098B741 /* JSONData.swift in Sources */,
 				3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */,
 				3A7FDAC2250128FD00BF278D /* Book.swift in Sources */,
 				3A62AFE525027B02006CC89D /* SearchView.swift in Sources */,
