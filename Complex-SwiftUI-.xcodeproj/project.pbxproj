@@ -17,6 +17,7 @@
 		3A7FDABD2501270500BF278D /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FDABC2501270500BF278D /* GlobalHelpers.swift */; };
 		3A7FDABF2501272A00BF278D /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FDABE2501272A00BF278D /* Carousel.swift */; };
 		3A7FDAC2250128FD00BF278D /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FDAC1250128FD00BF278D /* Book.swift */; };
+		3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */; };
 		3AF1E66B250323CF00441EFE /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1E66A250323CF00441EFE /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		3A7FDABC2501270500BF278D /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		3A7FDABE2501272A00BF278D /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
 		3A7FDAC1250128FD00BF278D /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress HUD.swift"; sourceTree = "<group>"; };
 		3AF1E66A250323CF00441EFE /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		517DC5778C736222ABFB22C2 /* Pods-Complex-SwiftUI-.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Complex-SwiftUI-.release.xcconfig"; path = "Target Support Files/Pods-Complex-SwiftUI-/Pods-Complex-SwiftUI-.release.xcconfig"; sourceTree = "<group>"; };
 		CBC306E07E019EE138FFCCC5 /* Pods_Complex_SwiftUI_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Complex_SwiftUI_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 				3A62AFE325027AFA006CC89D /* SearchView */,
 				3AF1E669250323BD00441EFE /* SideMenu */,
 				3A0BCAEF25033CA800397F5F /* Circular Slider */,
+				3AD137AE250476F400F6C3A0 /* ProgressHUD */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
 				3A7FDAAF2501260E00BF278D /* Assets.xcassets */,
@@ -134,6 +137,15 @@
 				3A7FDAC1250128FD00BF278D /* Book.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3AD137AE250476F400F6C3A0 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */,
+			);
+			name = ProgressHUD;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		3AF1E669250323BD00441EFE /* SideMenu */ = {
@@ -280,6 +292,7 @@
 				3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */,
 				3A7FDAAC2501260D00BF278D /* Complex_SwiftUI_App.swift in Sources */,
 				3AF1E66B250323CF00441EFE /* SideMenu.swift in Sources */,
+				3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */,
 				3A7FDAC2250128FD00BF278D /* Book.swift in Sources */,
 				3A62AFE525027B02006CC89D /* SearchView.swift in Sources */,
 				3A7FDABF2501272A00BF278D /* Carousel.swift in Sources */,

@@ -11,7 +11,8 @@ import SwiftUI
 struct Complex_SwiftUI_App: App {
     var body: some Scene {
         WindowGroup {
-            SideMenu()
+            Progress_HUD()
+            
         }
     }
 }
