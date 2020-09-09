@@ -26,8 +26,7 @@ struct DatingView: View {
                 Spacer(minLength: 0)
               
                 
-                Text("Let's Meet")
-                    .font(.title)
+                Text("Searching")
                     .fontWeight(.bold)
                 
                 Spacer(minLength: 0)
@@ -42,7 +41,7 @@ struct DatingView: View {
             }
             .padding()
             
-            GeometryReader  {g in
+            GeometryReader  { g in
                 
                 ZStack {
                     ForEach(profiles.reversed()) { pep in
@@ -89,7 +88,7 @@ struct ProfileView : View {
                         Spacer()
                     }
                     
-                    Text(human.offSet == 0 ? "" : (human.offSet > 0 ? "Like"  : "Rehject"))
+                    Text(human.offSet == 0 ? "" : (human.offSet > 0 ? "Like"  : "Reject"))
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -166,7 +165,7 @@ struct ProfileView : View {
                 withAnimation {
                     if human.offSet > 150 {
                         human.offSet = 500
-                    } else if human.offSet < 150 {
+                    } else if human.offSet < -150 {
                         human.offSet = -500
                     } else {
                         human.offSet = 0

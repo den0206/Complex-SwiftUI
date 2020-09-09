@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0337718AC31464BDB87BBE67 /* Pods_Complex_SwiftUI_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC306E07E019EE138FFCCC5 /* Pods_Complex_SwiftUI_.framework */; };
 		3A0BCAF225033CDF00397F5F /* Circular Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BCAF125033CDF00397F5F /* Circular Slider.swift */; };
+		3A4906A1250908A500974363 /* DailyChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4906A0250908A500974363 /* DailyChartsView.swift */; };
+		3A4906A325090A1600974363 /* DailyChartsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4906A225090A1500974363 /* DailyChartsModels.swift */; };
 		3A62AFE525027B02006CC89D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A62AFE425027B02006CC89D /* SearchView.swift */; };
 		3A630B932504B6A90098B741 /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B922504B6A90098B741 /* JSONParse.swift */; };
 		3A630B952504B7580098B741 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B942504B7580098B741 /* JSONData.swift */; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		34A8AE6354C658D27BE940CF /* Pods-Complex-SwiftUI-.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Complex-SwiftUI-.debug.xcconfig"; path = "Target Support Files/Pods-Complex-SwiftUI-/Pods-Complex-SwiftUI-.debug.xcconfig"; sourceTree = "<group>"; };
 		3A0BCAF125033CDF00397F5F /* Circular Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circular Slider.swift"; sourceTree = "<group>"; };
+		3A4906A0250908A500974363 /* DailyChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChartsView.swift; sourceTree = "<group>"; };
+		3A4906A225090A1500974363 /* DailyChartsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChartsModels.swift; sourceTree = "<group>"; };
 		3A62AFE425027B02006CC89D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		3A630B922504B6A90098B741 /* JSONParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
 		3A630B942504B7580098B741 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
@@ -76,6 +80,16 @@
 				3A0BCAF125033CDF00397F5F /* Circular Slider.swift */,
 			);
 			name = "Circular Slider";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3A49069F2509087E00974363 /* Daily Charts */ = {
+			isa = PBXGroup;
+			children = (
+				3A4906A0250908A500974363 /* DailyChartsView.swift */,
+				3A4906A225090A1500974363 /* DailyChartsModels.swift */,
+			);
+			name = "Daily Charts";
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -129,6 +143,7 @@
 				3AC227662504FCF000EEAAC0 /* Pagination */,
 				3ABA6BAF25064DAF00112925 /* Own API */,
 				3ABA6BB425065E1600112925 /* Dating */,
+				3A49069F2509087E00974363 /* Daily Charts */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
 				3A7FDAAF2501260E00BF278D /* Assets.xcassets */,
@@ -360,11 +375,13 @@
 				3A630B932504B6A90098B741 /* JSONParse.swift in Sources */,
 				3A7FDABD2501270500BF278D /* GlobalHelpers.swift in Sources */,
 				3ABA6BB325064E1900112925 /* OwnModel.swift in Sources */,
+				3A4906A325090A1600974363 /* DailyChartsModels.swift in Sources */,
 				3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */,
 				3A7FDAAC2501260D00BF278D /* Complex_SwiftUI_App.swift in Sources */,
 				3AF4B5FF2504C57C00EA93C9 /* Feeling Meter.swift in Sources */,
 				3AF1E66B250323CF00441EFE /* SideMenu.swift in Sources */,
 				3A630B952504B7580098B741 /* JSONData.swift in Sources */,
+				3A4906A1250908A500974363 /* DailyChartsView.swift in Sources */,
 				3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */,
 				3A7FDAC2250128FD00BF278D /* Book.swift in Sources */,
 				3A62AFE525027B02006CC89D /* SearchView.swift in Sources */,
