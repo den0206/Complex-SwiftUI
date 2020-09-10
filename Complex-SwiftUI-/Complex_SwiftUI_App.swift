@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct Complex_SwiftUI_App: App {
     
-    let viewType : RootView = .DailyCharts
+    let viewType : RootView = .StoryCard
     
     var body: some Scene {
         WindowGroup {
@@ -36,6 +36,7 @@ enum RootView  {
     case OwnAPI
     case Dating
     case DailyCharts
+    case StoryCard
     
         
     var rootView : AnyView{
@@ -63,6 +64,8 @@ enum RootView  {
             return AnyView(DatingView())
         case .DailyCharts:
             return AnyView(DailyChartsView())
+        case .StoryCard:
+            return AnyView(StoryCardView())
         }
     }
     

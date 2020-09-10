@@ -12,9 +12,10 @@ func hideKeyBord() {
     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
 }
 
-func creatExampleImageUrl(Int : Int) -> URL {
+func creatExampleImageUrl() -> URL {
     
-    let urlString = "https://picsum.photos/200/10\(Int)"
+    let iValue = Int.random(in: 1 ... 99)
+    let urlString = "https://picsum.photos/200/10\(iValue)"
     
     return URL(string: urlString)!
 }
