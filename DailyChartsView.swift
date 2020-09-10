@@ -88,7 +88,7 @@ struct DailyChartsView: View {
                 .padding()
                 
                 HStack {
-                    Text("Statick")
+                    Text("Statics")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -139,7 +139,7 @@ struct DailyChartsView: View {
                             }
                             .rotationEffect(.init(degrees: -90))
                             
-                            Text(getDec(val: stat.currentData) + "/" + getDec(val: stat.goal))
+                            Text(getDec(val: stat.currentData) + " / " + getDec(val: stat.goal))
                                 .font(.system(size: 22))
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)

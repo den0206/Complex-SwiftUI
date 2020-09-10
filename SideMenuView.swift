@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SideMenu: View {
+struct SideMenuView: View {
     
     @State  var edge = UIApplication.shared.windows.first?.safeAreaInsets
     @State private var width = UIScreen.main.bounds.width
@@ -150,7 +150,7 @@ struct SideMenu: View {
 
 struct SideMenu_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenu()
+        SideMenuView()
     }
 }
 

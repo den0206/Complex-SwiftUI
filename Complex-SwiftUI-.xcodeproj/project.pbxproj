@@ -28,7 +28,7 @@
 		3AC227682504FD0500EEAAC0 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC227672504FD0500EEAAC0 /* Pagination.swift */; };
 		3AC2276A2504FD5A00EEAAC0 /* PaginationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */; };
 		3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */; };
-		3AF1E66B250323CF00441EFE /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1E66A250323CF00441EFE /* SideMenu.swift */; };
+		3AF1E66B250323CF00441EFE /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1E66A250323CF00441EFE /* SideMenuView.swift */; };
 		3AF4B5FF2504C57C00EA93C9 /* Feeling Meter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF4B5FE2504C57C00EA93C9 /* Feeling Meter.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		3AC227672504FD0500EEAAC0 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationVIewModel.swift; sourceTree = "<group>"; };
 		3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress HUD.swift"; sourceTree = "<group>"; };
-		3AF1E66A250323CF00441EFE /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		3AF1E66A250323CF00441EFE /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		3AF4B5FE2504C57C00EA93C9 /* Feeling Meter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Feeling Meter.swift"; sourceTree = "<group>"; };
 		517DC5778C736222ABFB22C2 /* Pods-Complex-SwiftUI-.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Complex-SwiftUI-.release.xcconfig"; path = "Target Support Files/Pods-Complex-SwiftUI-/Pods-Complex-SwiftUI-.release.xcconfig"; sourceTree = "<group>"; };
 		CBC306E07E019EE138FFCCC5 /* Pods_Complex_SwiftUI_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Complex_SwiftUI_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,7 +225,7 @@
 		3AF1E669250323BD00441EFE /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				3AF1E66A250323CF00441EFE /* SideMenu.swift */,
+				3AF1E66A250323CF00441EFE /* SideMenuView.swift */,
 			);
 			name = SideMenu;
 			path = ..;
@@ -379,7 +379,7 @@
 				3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */,
 				3A7FDAAC2501260D00BF278D /* Complex_SwiftUI_App.swift in Sources */,
 				3AF4B5FF2504C57C00EA93C9 /* Feeling Meter.swift in Sources */,
-				3AF1E66B250323CF00441EFE /* SideMenu.swift in Sources */,
+				3AF1E66B250323CF00441EFE /* SideMenuView.swift in Sources */,
 				3A630B952504B7580098B741 /* JSONData.swift in Sources */,
 				3A4906A1250908A500974363 /* DailyChartsView.swift in Sources */,
 				3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */,
