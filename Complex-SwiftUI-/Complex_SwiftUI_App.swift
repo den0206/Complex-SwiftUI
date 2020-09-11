@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct Complex_SwiftUI_App: App {
     
-    let viewType : RootView = .LazyVgridSearch
+    let viewType : RootView = .Travel
     
     var body: some Scene {
         WindowGroup {
@@ -38,6 +38,7 @@ enum RootView  {
     case DailyCharts
     case StoryCard
     case LazyVgridSearch
+    case Travel
     
         
     var rootView : AnyView{
@@ -69,6 +70,8 @@ enum RootView  {
             return AnyView(StoryCardView())
         case .LazyVgridSearch:
             return AnyView(LazyVgridSearchView())
+        case .Travel:
+            return AnyView(TravelView())
         }
     }
     

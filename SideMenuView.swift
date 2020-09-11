@@ -92,7 +92,7 @@ struct SideMenuView: View {
                     .padding(.top,4)
                     
                     HStack(spacing : 15) {
-                        WebImage(url: getPeopleImageUrl())
+                        WebImage(url: getExampleImageUrl())
                             .resizable()
                             .frame(width: 75, height: 75)
                             .scaledToFit()

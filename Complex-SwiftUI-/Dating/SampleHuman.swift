@@ -19,12 +19,12 @@ struct SampleHuman : Identifiable {
 }
 
 var profiles = [
-    SampleHuman(id: 0, name: "a", imageUrl: getPeopleImageUrl(), age: "22", offSet: 0),
-    SampleHuman(id: 1, name: "b", imageUrl: getPeopleImageUrl(), age: "24", offSet: 0),
-    SampleHuman(id: 2, name: "c", imageUrl: getPeopleImageUrl(), age: "32", offSet: 0),
-    SampleHuman(id: 3, name: "d", imageUrl: getPeopleImageUrl(), age: "45", offSet: 0),
-    SampleHuman(id: 4, name: "e", imageUrl: getPeopleImageUrl(), age: "65", offSet: 0),
-    SampleHuman(id: 5, name: "f", imageUrl: getPeopleImageUrl(), age: "23", offSet: 0),
-    SampleHuman(id: 6, name: "g", imageUrl: getPeopleImageUrl(), age: "19", offSet: 0),
+    SampleHuman(id: 0, name: "a", imageUrl: getExampleImageUrl(), age: "22", offSet: 0),
+    SampleHuman(id: 1, name: "b", imageUrl: getExampleImageUrl(), age: "24", offSet: 0),
+    SampleHuman(id: 2, name: "c", imageUrl: getExampleImageUrl(), age: "32", offSet: 0),
+    SampleHuman(id: 3, name: "d", imageUrl: getExampleImageUrl(), age: "45", offSet: 0),
+    SampleHuman(id: 4, name: "e", imageUrl: getExampleImageUrl(), age: "65", offSet: 0),
+    SampleHuman(id: 5, name: "f", imageUrl: getExampleImageUrl(), age: "23", offSet: 0),
+    SampleHuman(id: 6, name: "g", imageUrl: getExampleImageUrl(), age: "19", offSet: 0),
 
 ]

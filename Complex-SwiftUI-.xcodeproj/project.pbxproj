@@ -29,6 +29,7 @@
 		3AC227682504FD0500EEAAC0 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC227672504FD0500EEAAC0 /* Pagination.swift */; };
 		3AC2276A2504FD5A00EEAAC0 /* PaginationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */; };
 		3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */; };
+		3ADCB45D250BA99900CEC198 /* TravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADCB45C250BA99900CEC198 /* TravelView.swift */; };
 		3AF1E66B250323CF00441EFE /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1E66A250323CF00441EFE /* SideMenuView.swift */; };
 		3AF2BCC3250A4BE1005B2654 /* StoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2BCC2250A4BE1005B2654 /* StoryCardView.swift */; };
 		3AF2BCC5250A4FAB005B2654 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2BCC4250A4FAB005B2654 /* Story.swift */; };
@@ -60,6 +61,7 @@
 		3AC227672504FD0500EEAAC0 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationVIewModel.swift; sourceTree = "<group>"; };
 		3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress HUD.swift"; sourceTree = "<group>"; };
+		3ADCB45C250BA99900CEC198 /* TravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelView.swift; sourceTree = "<group>"; };
 		3AF1E66A250323CF00441EFE /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		3AF2BCC2250A4BE1005B2654 /* StoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardView.swift; sourceTree = "<group>"; };
 		3AF2BCC4250A4FAB005B2654 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				3A49069F2509087E00974363 /* Daily Charts */,
 				3AF2BCC1250A4BB8005B2654 /* StoryCardView */,
 				3A66F82C250A61E800A82ABA /* LazyVgridSearch */,
+				3ADCB45B250BA97000CEC198 /* TravelView */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
 				3A7FDAAF2501260E00BF278D /* Assets.xcassets */,
@@ -237,6 +240,14 @@
 			);
 			name = ProgressHUD;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		3ADCB45B250BA97000CEC198 /* TravelView */ = {
+			isa = PBXGroup;
+			children = (
+				3ADCB45C250BA99900CEC198 /* TravelView.swift */,
+			);
+			path = TravelView;
 			sourceTree = "<group>";
 		};
 		3AF1E669250323BD00441EFE /* SideMenu */ = {
@@ -399,6 +410,7 @@
 				3ABA6BB825065FC300112925 /* SampleHuman.swift in Sources */,
 				3ABA6BB125064DD200112925 /* OwnAPIView.swift in Sources */,
 				3A630B932504B6A90098B741 /* JSONParse.swift in Sources */,
+				3ADCB45D250BA99900CEC198 /* TravelView.swift in Sources */,
 				3A7FDABD2501270500BF278D /* GlobalHelpers.swift in Sources */,
 				3ABA6BB325064E1900112925 /* OwnModel.swift in Sources */,
 				3A4906A325090A1600974363 /* DailyChartsModels.swift in Sources */,
