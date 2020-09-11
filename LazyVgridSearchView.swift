@@ -6,34 +6,29 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct LazyVgridSearchView: View {
     
     @ObservedObject var vm = GridViewModel()
     
-    private var columns = Array(repeating: GridItem(.flexible(minimum: 100, maximum: 200),spacing: 12,alignment: .top), count: 3)
+    @State private var searchText = ""
+    @State private var isSearching = false
+    
+    private var columns = Array(repeating: GridItem(.flexible(minimum: 50, maximum: 200),spacing: 12,alignment: .top), count: 3)
     
     var body: some View {
         NavigationView {
+            
             ScrollView {
-                LazyVGrid(columns:columns,spacing : 12,content: {
-                    ForEach(vm.items, id :\.self) { item in
+                
+                JSONSearchField(seachText: $searchText, isSearchng: $isSearching)
+                    .padding(.bottom,8)
+
+                LazyVGrid(columns:columns,spacing : 16,content: {
+                    ForEach(vm.items.filter({"\($0)".contains(searchText) || searchText.isEmpty}), id :\.self) { item in
                         
-                        VStack(alignment: .leading) {
-                            
-                            Spacer()
-                                .frame(width: 100, height: 100)
-                                .background(Color.blue)
-                            
-                            Text(item.name)
-                                .font(.system(size: 10, weight: .semibold))
-                            Text(item.releaseDate)
-                                .font(.system(size: 9, weight: .regular))
-                            Text(item.copyright)
-                                .font(.system(size: 9, weight: .regular))
-                                .foregroundColor(.gray)
-                        }
-                        .padding(.horizontal)
+                        AppInfoView(item: item)
                         
                     }
                     
@@ -47,15 +42,104 @@ struct LazyVgridSearchView: View {
     }
 }
 
+//MARK: - One Culumn
+
+struct AppInfoView: View {
+    
+    var item : Result
+    var body: some View {
+        VStack(alignment: .leading) {
+            
+            WebImage(url: URL(string: item.artworkUrl100))
+                .resizable()
+                .scaledToFit()
+                .cornerRadius(22)
+            
+            
+            Text(item.name)
+                .font(.system(size: 10, weight: .semibold))
+                .padding(.top, 4)
+            Text(item.releaseDate)
+                .font(.system(size: 9, weight: .regular))
+            Text(item.copyright)
+                .font(.system(size: 9, weight: .regular))
+                .foregroundColor(.gray)
+            
+            Spacer()
+        }
+    }
+}
+
+
 struct LazyVgridSearchView_Previews: PreviewProvider {
     static var previews: some View {
         LazyVgridSearchView()
     }
 }
 
+struct JSONSearchField : View {
+    
+    @Binding var seachText : String
+    @Binding var isSearchng : Bool
+    var body: some View {
+        
+        
+        HStack {
+            HStack {
+                TextField("Search", text: $seachText)
+                    .padding(.leading,24)
+                    .onTapGesture(perform: {
+                        self.isSearchng = true
+                    })
+            }
+            .padding()
+            .background(Color(.systemGray3))
+            .cornerRadius(12)
+            .padding(.horizontal)
+            .overlay(
+                HStack {
+                    Image(systemName: "magnifyingglass")
+                    
+                    Spacer()
+                    
+                    if isSearchng {
+                        Button(action: {
+                            self.seachText = ""
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .padding(.vertical)
+                        })
+                    }
+                }
+                .padding(.horizontal,32)
+                .foregroundColor(.gray)
+            )
+            .transition(.move(edge: .trailing))
+            .animation(.spring())
+            
+            
+            if isSearchng {
+                Button(action: {
+                    isSearchng = false
+                    seachText = ""
+                }, label: {
+                    Text("Cancel")
+                        .foregroundColor(.gray)
+                })
+                .padding(.trailing,24)
+                .padding(.leading,0)
+                .transition(.move(edge: .trailing))
+                .animation(.spring())
+            }
+        }
+    
+    }
+}
+
 class GridViewModel : ObservableObject {
     
     @Published var items = [Result]()
+    
     
     init() {
         
@@ -96,3 +180,4 @@ struct Feed : Decodable {
 struct Result : Decodable, Hashable {
     let copyright,name,artworkUrl100,releaseDate : String
 }
+

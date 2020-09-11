@@ -88,7 +88,7 @@ struct DailyChartsView: View {
                 .padding()
                 
                 HStack {
-                    Text("Statics")
+                    Text("Statistics")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(.white)

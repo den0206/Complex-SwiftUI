@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct SideMenuView: View {
     
@@ -91,9 +92,11 @@ struct SideMenuView: View {
                     .padding(.top,4)
                     
                     HStack(spacing : 15) {
-                        Image(systemName: "person.fill")
+                        WebImage(url: getPeopleImageUrl())
+                            .resizable()
                             .frame(width: 75, height: 75)
-                            .foregroundColor(.gray)
+                            .scaledToFit()
+                            .clipShape(Circle())
                         
                         VStack(alignment: .leading, spacing: 5) {
                             Text("name")
@@ -135,7 +138,7 @@ struct SideMenuView: View {
                     Spacer(minLength: 0)
                 }
                 .frame(width: width - 100)
-                .background(Color.orange)
+                .background(Color.blue)
                 .offset(x: show ? 0 : width - 100)
             }
             .background(Color.black.opacity(show ? 0.3 : 0))
