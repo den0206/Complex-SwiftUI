@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct Complex_SwiftUI_App: App {
     
-    let viewType : RootView = .CircularTab
+    let viewType : RootView = .ShoesShop
     
     var body: some Scene {
         WindowGroup {
@@ -39,6 +39,7 @@ enum RootView  {
     case StoryCard
     case LazyVgridSearch
     case Travel
+    case ShoesShop
     case CircularTab
     
         
@@ -75,6 +76,8 @@ enum RootView  {
             return AnyView(TravelView())
         case .CircularTab:
             return AnyView(CircularTabView())
+        case .ShoesShop:
+            return AnyView(ShoesShopView())
         }
     }
     

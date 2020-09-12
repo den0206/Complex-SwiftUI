@@ -15,6 +15,7 @@
 		3A630B932504B6A90098B741 /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B922504B6A90098B741 /* JSONParse.swift */; };
 		3A630B952504B7580098B741 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B942504B7580098B741 /* JSONData.swift */; };
 		3A6444F9250C61970087899B /* CircularTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6444F8250C61970087899B /* CircularTabView.swift */; };
+		3A6444FD250C6D360087899B /* ShoesShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6444FC250C6D360087899B /* ShoesShopView.swift */; };
 		3A66F82E250A620500A82ABA /* LazyVgridSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66F82D250A620500A82ABA /* LazyVgridSearchView.swift */; };
 		3A7FDAAC2501260D00BF278D /* Complex_SwiftUI_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FDAAB2501260D00BF278D /* Complex_SwiftUI_App.swift */; };
 		3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7FDAAD2501260D00BF278D /* ContentView.swift */; };
@@ -46,6 +47,7 @@
 		3A630B922504B6A90098B741 /* JSONParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
 		3A630B942504B7580098B741 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
 		3A6444F8250C61970087899B /* CircularTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTabView.swift; sourceTree = "<group>"; };
+		3A6444FC250C6D360087899B /* ShoesShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesShopView.swift; sourceTree = "<group>"; };
 		3A66F82D250A620500A82ABA /* LazyVgridSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVgridSearchView.swift; sourceTree = "<group>"; };
 		3A7FDAA82501260D00BF278D /* Complex-SwiftUI-.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Complex-SwiftUI-.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7FDAAB2501260D00BF278D /* Complex_SwiftUI_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Complex_SwiftUI_App.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 			path = "Circular Tab";
 			sourceTree = "<group>";
 		};
+		3A6444FB250C6D130087899B /* ShoesShop */ = {
+			isa = PBXGroup;
+			children = (
+				3A6444FC250C6D360087899B /* ShoesShopView.swift */,
+			);
+			path = ShoesShop;
+			sourceTree = "<group>";
+		};
 		3A66F82C250A61E800A82ABA /* LazyVgridSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				3A7FDAAB2501260D00BF278D /* Complex_SwiftUI_App.swift */,
-				3A6444F7250C61730087899B /* Circular Tab */,
 				3A7FDABA2501262A00BF278D /* Custom Carousel */,
 				3A62AFE325027AFA006CC89D /* SearchView */,
 				3AF1E669250323BD00441EFE /* SideMenu */,
@@ -175,6 +184,8 @@
 				3AF2BCC1250A4BB8005B2654 /* StoryCardView */,
 				3A66F82C250A61E800A82ABA /* LazyVgridSearch */,
 				3ADCB45B250BA97000CEC198 /* TravelView */,
+				3A6444F7250C61730087899B /* Circular Tab */,
+				3A6444FB250C6D130087899B /* ShoesShop */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
 				3A7FDAAF2501260E00BF278D /* Assets.xcassets */,
@@ -442,6 +453,7 @@
 				3ABA6BB625065E2B00112925 /* DatingView.swift in Sources */,
 				3A6444F9250C61970087899B /* CircularTabView.swift in Sources */,
 				3AF2BCC5250A4FAB005B2654 /* Story.swift in Sources */,
+				3A6444FD250C6D360087899B /* ShoesShopView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
