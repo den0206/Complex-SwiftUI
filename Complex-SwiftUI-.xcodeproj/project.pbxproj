@@ -30,6 +30,7 @@
 		3ABA6BB825065FC300112925 /* SampleHuman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA6BB725065FC300112925 /* SampleHuman.swift */; };
 		3AC227682504FD0500EEAAC0 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC227672504FD0500EEAAC0 /* Pagination.swift */; };
 		3AC2276A2504FD5A00EEAAC0 /* PaginationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */; };
+		3ACD6EBC250DEC2C00A18C70 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD6EBB250DEC2C00A18C70 /* DashBoardView.swift */; };
 		3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */; };
 		3ADCB45D250BA99900CEC198 /* TravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADCB45C250BA99900CEC198 /* TravelView.swift */; };
 		3AF1E66B250323CF00441EFE /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1E66A250323CF00441EFE /* SideMenuView.swift */; };
@@ -64,6 +65,7 @@
 		3ABA6BB725065FC300112925 /* SampleHuman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHuman.swift; sourceTree = "<group>"; };
 		3AC227672504FD0500EEAAC0 /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationVIewModel.swift; sourceTree = "<group>"; };
+		3ACD6EBB250DEC2C00A18C70 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
 		3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress HUD.swift"; sourceTree = "<group>"; };
 		3ADCB45C250BA99900CEC198 /* TravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelView.swift; sourceTree = "<group>"; };
 		3AF1E66A250323CF00441EFE /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				3ADCB45B250BA97000CEC198 /* TravelView */,
 				3A6444F7250C61730087899B /* Circular Tab */,
 				3A6444FB250C6D130087899B /* ShoesShop */,
+				3ACD6EBA250DEC0E00A18C70 /* DashBoard */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
 				3A7FDAAF2501260E00BF278D /* Assets.xcassets */,
@@ -253,6 +256,14 @@
 				3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */,
 			);
 			path = Pagination;
+			sourceTree = "<group>";
+		};
+		3ACD6EBA250DEC0E00A18C70 /* DashBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3ACD6EBB250DEC2C00A18C70 /* DashBoardView.swift */,
+			);
+			path = DashBoard;
 			sourceTree = "<group>";
 		};
 		3AD137AE250476F400F6C3A0 /* ProgressHUD */ = {
@@ -443,6 +454,7 @@
 				3A630B952504B7580098B741 /* JSONData.swift in Sources */,
 				3A4906A1250908A500974363 /* DailyChartsView.swift in Sources */,
 				3AF2BCC3250A4BE1005B2654 /* StoryCardView.swift in Sources */,
+				3ACD6EBC250DEC2C00A18C70 /* DashBoardView.swift in Sources */,
 				3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */,
 				3A7FDAC2250128FD00BF278D /* Book.swift in Sources */,
 				3A62AFE525027B02006CC89D /* SearchView.swift in Sources */,
