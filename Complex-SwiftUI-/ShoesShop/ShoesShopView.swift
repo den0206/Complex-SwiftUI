@@ -12,6 +12,7 @@ struct ShoesShopView: View {
     
     //MARK: - Property
     
+    @State private var topBarIndex = 0
     @State private var index = 0
     @State private var selectedIndex = 0
     @State private var show = false {
@@ -54,7 +55,7 @@ struct ShoesShopView: View {
                                 
                                 ForEach(0..<topMenu.count) { menu in
                                     
-                                    TopMenuView(menu: menu, index: $index)
+                                    TopMenuView(menu: menu, index: $topBarIndex)
                                     
                                 }
                                 .padding(.horizontal)
@@ -258,7 +259,7 @@ struct ShoesShopView: View {
    
             }
             
-            //MARK: - Z3 ModelVIew
+            //MARK: - Z3 ModelView
             
             if show {
                 VStack {
@@ -295,10 +296,77 @@ struct ShoesShopView: View {
                     .background(Color.random)
                      
                     // TODO: - scroll View
-                    
-                    
+                    ScrollView(UIScreen.main.bounds.height < 750 ? .vertical : .init(), showsIndicators: false) {
+                        
+                        HStack {
+                            VStack(alignment: .leading, spacing: 10) {
+                                Text("Men's SHoes")
+                                    .foregroundColor(.gray)
+                                
+                                Text("Example")
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 22, weight : .bold))
+                            }
+                            
+                            Spacer()
+                            
+                            Text("$200")
+                                .fontWeight(.bold)
+                                .font(.system(size: 22, weight: .bold))
+                            
+                        }
+                        .padding()
+                        
+                        Text("example Description")
+                            .foregroundColor(.black)
+                            .padding(.top,10)
+                            .padding(.horizontal)
+                        
+                        HStack {
+                            
+                            VStack(alignment: .leading, spacing: 25) {
+                                Text("Colors")
+                                    .font(.title)
+                                
+                                HStack {
+                                    ForEach(1...6, id : \.self) { i in
+                                        
+                                        if i != selectedIndex {
+                                            Button(action: {}) {
+                                                Circle()
+                                                    .fill(Color.random)
+                                                    .frame(width: 22, height: 22)
+                                                
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                            Spacer()
+                        }
+                        .padding(.horizontal)
+                        .padding(.top, 25)
+                        
+                        Spacer(minLength: 0)
+                        
+                        Button(action: {}) {
+                            Text("Add To Cart")
+                                .fontWeight(.bold)
+                                .padding(.vertical)
+                                .foregroundColor(.white)
+                                .frame(width: UIScreen.main.bounds.width - 100)
+                                .background(Color.black)
+                                .clipShape(Capsule())
+                        }
+                        .padding(.bottom,40)
+                        .padding(.top)
+                        
+                        
+                    }
 
                 }
+                .background(Color(.systemGroupedBackground))
              
             }
             
