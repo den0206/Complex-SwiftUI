@@ -10,7 +10,9 @@ import SwiftUI
 @main
 struct Complex_SwiftUI_App: App {
     
-    let viewType : RootView = .Travel_LazyV
+    //MARK: - ルートの変更場所
+    
+    let viewType : RootView = .Giphy_app
     
     var body: some Scene {
         WindowGroup {
@@ -44,6 +46,7 @@ enum RootView  {
     case CircularTab
     case E_Commerce
     case Travel_LazyV
+    case Giphy_app
     
         
     var rootView : AnyView{
@@ -87,6 +90,8 @@ enum RootView  {
             return AnyView(E_CommerceView())
         case .Travel_LazyV :
             return AnyView(Travel_LazyView())
+        case .Giphy_app :
+            return AnyView(Giphy_AppView())
         }
     }
     
