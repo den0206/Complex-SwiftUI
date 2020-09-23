@@ -12,7 +12,7 @@ struct Complex_SwiftUI_App: App {
     
     //MARK: - ルートの変更場所
     
-    let viewType : RootView = .Giphy_app
+    let viewType : RootView = .Furniture_App
     
     var body: some Scene {
         WindowGroup {
@@ -47,6 +47,8 @@ enum RootView  {
     case E_Commerce
     case Travel_LazyV
     case Giphy_app
+    case Furniture_App
+
     
         
     var rootView : AnyView{
@@ -92,6 +94,8 @@ enum RootView  {
             return AnyView(Travel_LazyView())
         case .Giphy_app :
             return AnyView(Giphy_AppView())
+        case .Furniture_App :
+            return AnyView(Furniture_AppView())
         }
     }
     
