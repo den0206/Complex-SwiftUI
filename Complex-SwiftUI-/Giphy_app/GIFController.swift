@@ -14,12 +14,14 @@ struct GIFController : UIViewControllerRepresentable {
     @Binding var url : String
     @Binding var present : Bool
     
+    var apiKey = KGYPHKEY
+    
     func makeCoordinator() -> Coordinator {
         return GIFController.Coordinator(parent: self)
     }
     
     func makeUIViewController(context: Context) ->  GiphyViewController {
-        Giphy.configure(apiKey: KGYPHKEY)
+        Giphy.configure(apiKey: apiKey)
         let controller = GiphyViewController()
         controller.mediaTypeConfig = [.emoji,.gifs, .stickers]
         controller.delegate = context.coordinator
