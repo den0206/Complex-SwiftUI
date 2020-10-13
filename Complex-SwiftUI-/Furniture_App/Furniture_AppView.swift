@@ -45,7 +45,7 @@ struct Furniture_AppView : View {
                     
                 }
                 .padding()
-                
+                            
                 /// search area
                 HStack(spacing : 15) {
                     Image(systemName: "magnifyingglass")
