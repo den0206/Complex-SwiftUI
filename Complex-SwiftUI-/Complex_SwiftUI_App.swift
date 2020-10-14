@@ -12,7 +12,7 @@ struct Complex_SwiftUI_App: App {
     
     //MARK: - ルートの変更場所
     
-    let viewType : RootView = .CoreImage
+    let viewType : RootView = .Reaction
     
     var body: some Scene {
         WindowGroup {
@@ -49,6 +49,7 @@ enum RootView  {
     case Giphy_app
     case Furniture_App
     case CoreImage
+    case Reaction
 
     
         
@@ -99,6 +100,8 @@ enum RootView  {
             return AnyView(Furniture_AppView())
         case .CoreImage :
             return AnyView(CoreImageView())
+        case .Reaction :
+            return AnyView(ReactionView())
         }
     }
     

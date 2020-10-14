@@ -11,6 +11,8 @@
 		3A0BCAF225033CDF00397F5F /* Circular Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BCAF125033CDF00397F5F /* Circular Slider.swift */; };
 		3A104C01251A2560002AECC5 /* Giphy_AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104C00251A2560002AECC5 /* Giphy_AppView.swift */; };
 		3A104C05251A26A4002AECC5 /* GIFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104C04251A26A4002AECC5 /* GIFController.swift */; };
+		3A27605B2536DA6000CD7EB9 /* ReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27605A2536DA6000CD7EB9 /* ReactionView.swift */; };
+		3A27605F2536DBC900CD7EB9 /* reactions in Resources */ = {isa = PBXBuildFile; fileRef = 3A27605E2536DBC900CD7EB9 /* reactions */; };
 		3A31FFB0251A31D400436E4F /* sec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31FFAF251A31D400436E4F /* sec.swift */; };
 		3A4906A1250908A500974363 /* DailyChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4906A0250908A500974363 /* DailyChartsView.swift */; };
 		3A4906A325090A1600974363 /* DailyChartsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4906A225090A1500974363 /* DailyChartsModels.swift */; };
@@ -54,6 +56,8 @@
 		3A104C00251A2560002AECC5 /* Giphy_AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giphy_AppView.swift; sourceTree = "<group>"; };
 		3A104C04251A26A4002AECC5 /* GIFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFController.swift; sourceTree = "<group>"; };
 		3A1C76A1251CE106004731F5 /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3A27605A2536DA6000CD7EB9 /* ReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionView.swift; sourceTree = "<group>"; };
+		3A27605E2536DBC900CD7EB9 /* reactions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = reactions; sourceTree = "<group>"; };
 		3A31FFAF251A31D400436E4F /* sec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sec.swift; sourceTree = "<group>"; };
 		3A4906A0250908A500974363 /* DailyChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChartsView.swift; sourceTree = "<group>"; };
 		3A4906A225090A1500974363 /* DailyChartsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChartsModels.swift; sourceTree = "<group>"; };
@@ -123,6 +127,15 @@
 				3A104C04251A26A4002AECC5 /* GIFController.swift */,
 			);
 			path = Giphy_app;
+			sourceTree = "<group>";
+		};
+		3A2760592536DA4B00CD7EB9 /* Reaction */ = {
+			isa = PBXGroup;
+			children = (
+				3A27605A2536DA6000CD7EB9 /* ReactionView.swift */,
+				3A27605E2536DBC900CD7EB9 /* reactions */,
+			);
+			path = Reaction;
 			sourceTree = "<group>";
 		};
 		3A49069F2509087E00974363 /* Daily Charts */ = {
@@ -239,6 +252,7 @@
 				3A104BFF251A253E002AECC5 /* Giphy_app */,
 				3AE8BFC7251B69BF002BCC4B /* Furniture_App */,
 				3A78F8BF2535DD4800ECD5EC /* CoreImage */,
+				3A2760592536DA4B00CD7EB9 /* Reaction */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
 				3A7FDAAF2501260E00BF278D /* Assets.xcassets */,
@@ -455,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7FDAB32501260E00BF278D /* Preview Assets.xcassets in Resources */,
+				3A27605F2536DBC900CD7EB9 /* reactions in Resources */,
 				3A7FDAB02501260E00BF278D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +536,7 @@
 				3A78F8C22535DD6400ECD5EC /* CoreImageView.swift in Sources */,
 				3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */,
 				3A104C01251A2560002AECC5 /* Giphy_AppView.swift in Sources */,
+				3A27605B2536DA6000CD7EB9 /* ReactionView.swift in Sources */,
 				3A7FDAAC2501260D00BF278D /* Complex_SwiftUI_App.swift in Sources */,
 				3AF4B5FF2504C57C00EA93C9 /* Feeling Meter.swift in Sources */,
 				3AF1E66B250323CF00441EFE /* SideMenuView.swift in Sources */,
