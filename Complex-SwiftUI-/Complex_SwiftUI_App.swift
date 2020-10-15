@@ -12,7 +12,7 @@ struct Complex_SwiftUI_App: App {
     
     //MARK: - ルートの変更場所
     
-    let viewType : RootView = .Reaction
+    let viewType : RootView = .CoreData
     
     var body: some Scene {
         WindowGroup {
@@ -50,6 +50,7 @@ enum RootView  {
     case Furniture_App
     case CoreImage
     case Reaction
+    case CoreData
 
     
         
@@ -102,6 +103,8 @@ enum RootView  {
             return AnyView(CoreImageView())
         case .Reaction :
             return AnyView(ReactionView())
+        case .CoreData :
+            return AnyView(CoreDataView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext))
         }
     }
     
