@@ -12,7 +12,7 @@ struct Complex_SwiftUI_App: App {
     
     //MARK: - ルートの変更場所
     
-    let viewType : RootView = .CoreData
+    let viewType : RootView = .Parallax_Scrolling
     
     var body: some Scene {
         WindowGroup {
@@ -51,6 +51,7 @@ enum RootView  {
     case CoreImage
     case Reaction
     case CoreData
+    case Parallax_Scrolling
 
     
         
@@ -105,6 +106,8 @@ enum RootView  {
             return AnyView(ReactionView())
         case .CoreData :
             return AnyView(CoreDataView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext))
+        case .Parallax_Scrolling:
+            return AnyView(Parallax_ScrollingView())
         }
     }
     

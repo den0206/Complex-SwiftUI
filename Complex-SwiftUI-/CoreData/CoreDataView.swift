@@ -11,6 +11,7 @@ import SwiftUI
 struct CoreDataView: View {
     
     @StateObject var vm = CoreDateViewModel()
+    @FetchRequest(entity: Task.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: true)],animation: .spring()) var results : FetchedResults<Task>
     
     var body: some View {
         
@@ -28,14 +29,35 @@ struct CoreDataView: View {
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
                 .background(Color.white)
                 
-                Spacer()
+               
                 
-                Text("No Task")
-                    .font(.title)
-                    .foregroundColor(.black)
-                    .fontWeight(.heavy)
-                
-                Spacer()
+                if results.isEmpty {
+                    Spacer()
+                    
+                    Text("No Task")
+                        .font(.title)
+                        .foregroundColor(.black)
+                        .fontWeight(.heavy)
+                    
+                    Spacer()
+                } else {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        
+                        LazyVStack(alignment: .leading, spacing: 20) {
+                            
+                            ForEach(results) { task in
+                                
+                                VStack(alignment: .leading, spacing: 5) {
+                                    
+                                    Text(task.content ?? "")
+                                        
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+               
                 
             }
             

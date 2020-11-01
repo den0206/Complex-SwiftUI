@@ -46,6 +46,8 @@ struct NewCoreDataView: View {
                 
                 DatePicker("", selection: $vm.date, displayedComponents: .date)
                     .labelsHidden()
+                
+                
             }
             .padding()
             

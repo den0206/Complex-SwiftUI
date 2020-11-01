@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0337718AC31464BDB87BBE67 /* Pods_Complex_SwiftUI_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBC306E07E019EE138FFCCC5 /* Pods_Complex_SwiftUI_.framework */; };
+		3A043FFA254EE6E100B2769C /* Parallax_ScrollingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A043FF9254EE6E100B2769C /* Parallax_ScrollingView.swift */; };
 		3A0BCAF225033CDF00397F5F /* Circular Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BCAF125033CDF00397F5F /* Circular Slider.swift */; };
 		3A104C01251A2560002AECC5 /* Giphy_AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104C00251A2560002AECC5 /* Giphy_AppView.swift */; };
 		3A104C05251A26A4002AECC5 /* GIFController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A104C04251A26A4002AECC5 /* GIFController.swift */; };
+		3A1746DA2539FA66005FE6B4 /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A1746D82539FA66005FE6B4 /* Task.xcdatamodeld */; };
 		3A27605B2536DA6000CD7EB9 /* ReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27605A2536DA6000CD7EB9 /* ReactionView.swift */; };
 		3A27605F2536DBC900CD7EB9 /* reactions in Resources */ = {isa = PBXBuildFile; fileRef = 3A27605E2536DBC900CD7EB9 /* reactions */; };
 		3A31FFB0251A31D400436E4F /* sec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A31FFAF251A31D400436E4F /* sec.swift */; };
@@ -19,7 +21,6 @@
 		3A62AFE525027B02006CC89D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A62AFE425027B02006CC89D /* SearchView.swift */; };
 		3A630B932504B6A90098B741 /* JSONParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B922504B6A90098B741 /* JSONParse.swift */; };
 		3A630B952504B7580098B741 /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A630B942504B7580098B741 /* JSONData.swift */; };
-		3A632C4B25388CD70056DE34 /* Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A632C4925388CD70056DE34 /* Task.xcdatamodeld */; };
 		3A632C4F25388DDB0056DE34 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A632C4E25388DDB0056DE34 /* CoreDataView.swift */; };
 		3A632C5325388E030056DE34 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A632C5225388E030056DE34 /* CoreDataViewModel.swift */; };
 		3A632C562538922E0056DE34 /* NewCoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A632C552538922E0056DE34 /* NewCoreDataView.swift */; };
@@ -57,9 +58,11 @@
 
 /* Begin PBXFileReference section */
 		34A8AE6354C658D27BE940CF /* Pods-Complex-SwiftUI-.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Complex-SwiftUI-.debug.xcconfig"; path = "Target Support Files/Pods-Complex-SwiftUI-/Pods-Complex-SwiftUI-.debug.xcconfig"; sourceTree = "<group>"; };
+		3A043FF9254EE6E100B2769C /* Parallax_ScrollingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parallax_ScrollingView.swift; sourceTree = "<group>"; };
 		3A0BCAF125033CDF00397F5F /* Circular Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Circular Slider.swift"; sourceTree = "<group>"; };
 		3A104C00251A2560002AECC5 /* Giphy_AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giphy_AppView.swift; sourceTree = "<group>"; };
 		3A104C04251A26A4002AECC5 /* GIFController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFController.swift; sourceTree = "<group>"; };
+		3A1746D92539FA66005FE6B4 /* Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task.xcdatamodel; sourceTree = "<group>"; };
 		3A1C76A1251CE106004731F5 /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3A27605A2536DA6000CD7EB9 /* ReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionView.swift; sourceTree = "<group>"; };
 		3A27605E2536DBC900CD7EB9 /* reactions */ = {isa = PBXFileReference; lastKnownFileType = folder; path = reactions; sourceTree = "<group>"; };
@@ -69,7 +72,6 @@
 		3A62AFE425027B02006CC89D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		3A630B922504B6A90098B741 /* JSONParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParse.swift; sourceTree = "<group>"; };
 		3A630B942504B7580098B741 /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
-		3A632C4A25388CD70056DE34 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		3A632C4E25388DDB0056DE34 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
 		3A632C5225388E030056DE34 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 		3A632C552538922E0056DE34 /* NewCoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCoreDataView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A043FF8254EE6C800B2769C /* Parallax_Scrolling */ = {
+			isa = PBXGroup;
+			children = (
+				3A043FF9254EE6E100B2769C /* Parallax_ScrollingView.swift */,
+			);
+			path = Parallax_Scrolling;
+			sourceTree = "<group>";
+		};
 		3A0BCAEF25033CA800397F5F /* Circular Slider */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +189,7 @@
 		3A632C4D25388D4B0056DE34 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				3A632C4925388CD70056DE34 /* Task.xcdatamodeld */,
+				3A1746D82539FA66005FE6B4 /* Task.xcdatamodeld */,
 				3A632C4E25388DDB0056DE34 /* CoreDataView.swift */,
 				3A632C552538922E0056DE34 /* NewCoreDataView.swift */,
 				3A632C5225388E030056DE34 /* CoreDataViewModel.swift */,
@@ -275,6 +285,7 @@
 				3AE8BFC7251B69BF002BCC4B /* Furniture_App */,
 				3A78F8BF2535DD4800ECD5EC /* CoreImage */,
 				3A2760592536DA4B00CD7EB9 /* Reaction */,
+				3A043FF8254EE6C800B2769C /* Parallax_Scrolling */,
 				3A632C4D25388D4B0056DE34 /* CoreData */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
@@ -546,6 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1746DA2539FA66005FE6B4 /* Task.xcdatamodeld in Sources */,
 				3A0BCAF225033CDF00397F5F /* Circular Slider.swift in Sources */,
 				3ABA6BB825065FC300112925 /* SampleHuman.swift in Sources */,
 				3ABA6BB125064DD200112925 /* OwnAPIView.swift in Sources */,
@@ -566,8 +578,8 @@
 				3AF4B5FF2504C57C00EA93C9 /* Feeling Meter.swift in Sources */,
 				3AF1E66B250323CF00441EFE /* SideMenuView.swift in Sources */,
 				3A632C4F25388DDB0056DE34 /* CoreDataView.swift in Sources */,
-				3A632C4B25388CD70056DE34 /* Task.xcdatamodeld in Sources */,
 				3A630B952504B7580098B741 /* JSONData.swift in Sources */,
+				3A043FFA254EE6E100B2769C /* Parallax_ScrollingView.swift in Sources */,
 				3A4906A1250908A500974363 /* DailyChartsView.swift in Sources */,
 				3AF2BCC3250A4BE1005B2654 /* StoryCardView.swift in Sources */,
 				3ACD6EBC250DEC2C00A18C70 /* DashBoardView.swift in Sources */,
@@ -780,12 +792,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3A632C4925388CD70056DE34 /* Task.xcdatamodeld */ = {
+		3A1746D82539FA66005FE6B4 /* Task.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3A632C4A25388CD70056DE34 /* Model.xcdatamodel */,
+				3A1746D92539FA66005FE6B4 /* Task.xcdatamodel */,
 			);
-			currentVersion = 3A632C4A25388CD70056DE34 /* Model.xcdatamodel */;
+			currentVersion = 3A1746D92539FA66005FE6B4 /* Task.xcdatamodel */;
 			path = Task.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
