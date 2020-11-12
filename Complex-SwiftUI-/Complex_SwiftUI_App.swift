@@ -52,6 +52,7 @@ enum RootView  {
     case Reaction
     case CoreData
     case Parallax_Scrolling
+    case WaterSlider
 
     
         
@@ -108,6 +109,8 @@ enum RootView  {
             return AnyView(CoreDataView().environment(\.managedObjectContext, PersistenceController.shared.container.viewContext))
         case .Parallax_Scrolling:
             return AnyView(Parallax_ScrollingView())
+        case .WaterSlider :
+            return AnyView(WaterSlider_View())
         }
     }
     

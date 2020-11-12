@@ -47,6 +47,7 @@
 		3AC2276A2504FD5A00EEAAC0 /* PaginationVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */; };
 		3ACD6EBC250DEC2C00A18C70 /* DashBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD6EBB250DEC2C00A18C70 /* DashBoardView.swift */; };
 		3AD137B02504771C00F6C3A0 /* Progress HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */; };
+		3AD2C1CD255D679A001F3A5C /* WaterSlider_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD2C1CC255D679A001F3A5C /* WaterSlider_View.swift */; };
 		3ADCB45D250BA99900CEC198 /* TravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADCB45C250BA99900CEC198 /* TravelView.swift */; };
 		3AE8BFC9251B69DD002BCC4B /* Furniture_AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8BFC8251B69DD002BCC4B /* Furniture_AppView.swift */; };
 		3AE8BFCC251B6EEF002BCC4B /* Furniture_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8BFCB251B6EEF002BCC4B /* Furniture_Model.swift */; };
@@ -100,6 +101,7 @@
 		3AC227692504FD5A00EEAAC0 /* PaginationVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationVIewModel.swift; sourceTree = "<group>"; };
 		3ACD6EBB250DEC2C00A18C70 /* DashBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardView.swift; sourceTree = "<group>"; };
 		3AD137AF2504771C00F6C3A0 /* Progress HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Progress HUD.swift"; sourceTree = "<group>"; };
+		3AD2C1CC255D679A001F3A5C /* WaterSlider_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterSlider_View.swift; sourceTree = "<group>"; };
 		3ADCB45C250BA99900CEC198 /* TravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelView.swift; sourceTree = "<group>"; };
 		3AE8BFC8251B69DD002BCC4B /* Furniture_AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_AppView.swift; sourceTree = "<group>"; };
 		3AE8BFCB251B6EEF002BCC4B /* Furniture_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_Model.swift; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 				3A78F8BF2535DD4800ECD5EC /* CoreImage */,
 				3A2760592536DA4B00CD7EB9 /* Reaction */,
 				3A043FF8254EE6C800B2769C /* Parallax_Scrolling */,
+				3AD2C1C2255D667A001F3A5C /* WaterSlider */,
 				3A632C4D25388D4B0056DE34 /* CoreData */,
 				3A7FDABB250126E200BF278D /* Extensions */,
 				3A7FDAAD2501260D00BF278D /* ContentView.swift */,
@@ -381,6 +384,14 @@
 			);
 			name = ProgressHUD;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		3AD2C1C2255D667A001F3A5C /* WaterSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3AD2C1CC255D679A001F3A5C /* WaterSlider_View.swift */,
+			);
+			path = WaterSlider;
 			sourceTree = "<group>";
 		};
 		3ADCB45B250BA97000CEC198 /* TravelView */ = {
@@ -569,6 +580,7 @@
 				3ADCB45D250BA99900CEC198 /* TravelView.swift in Sources */,
 				3A7FDABD2501270500BF278D /* GlobalHelpers.swift in Sources */,
 				3ABA6BB325064E1900112925 /* OwnModel.swift in Sources */,
+				3AD2C1CD255D679A001F3A5C /* WaterSlider_View.swift in Sources */,
 				3A4906A325090A1600974363 /* DailyChartsModels.swift in Sources */,
 				3A78F8C22535DD6400ECD5EC /* CoreImageView.swift in Sources */,
 				3A7FDAAE2501260D00BF278D /* ContentView.swift in Sources */,
